@@ -25,7 +25,9 @@ import {
 // Import our static event data catalog (Option 1 Clean-up!)
 import { EVENTS_DATA } from './data/eventsData';
 
-const API_BASE = 'https://project-eclecktika-backend.onrender.com/api';
+const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+  ? 'http://localhost:5000/api'
+  : 'https://project-eclecktika-backend.onrender.com/api';
 
 export default function App() {
   const [user, setUser] = useState(null);
