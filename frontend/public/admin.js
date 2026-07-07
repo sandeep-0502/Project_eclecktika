@@ -1,5 +1,5 @@
 // This is the address of our Node.js backend server
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://project-eclecktika-backend.onrender.com/api';
 const ADMIN_KEY = 'Eclectika2026AdminSecretKey'; // Matches the secret key in our backend .env
 
 // UI Element References
